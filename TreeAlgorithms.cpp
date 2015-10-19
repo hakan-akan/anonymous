@@ -1,21 +1,20 @@
 // TreeAlgorithms.cpp : main project file.
-
 #include "stdafx.h"
 
 using namespace System;
 
-class BSTNode {
-private:
-      int value;
-      BSTNode* left;
-      BSTNode* right;
+class BSTNode 
+{
 public:
-      BSTNode(int _value) {
-            value = value;
-			left	= nullptr;
-            right	= nullptr;
-      }
+      BSTNode(int _value) : 
+		  value(_value), left(nullptr), right(nullptr)
+      {}
+
 	  bool insert(int value);
+
+private:
+      int		value;
+      BSTNode  *left, *right;
 };
 
 bool BSTNode::insert(int value)
@@ -27,6 +26,10 @@ bool BSTNode::insert(int value)
 		if (left) 
 			return left->insert(value);
 		left = new BSTNode(value);
+	} else if (value > this->value) {
+		if (right) 
+			return right->insert(value);
+		right = new BSTNode(value);
 	}
 
 	return true;
