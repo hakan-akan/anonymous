@@ -2,7 +2,7 @@ Building v8.lib on Windows 10
 
 1. install vc2017 community edition. Ensure that it works (build a solution).
 2. open vc2017x64 command prompt 
-3. create a directory called src
+3. create a directory called src (Mine is c:\src)
 4. download depot_tools.zip
 5. EXTRACT depot_tools.zip inside src directory (Yes extract not copy!)
 6. set some environment varaibles 
