@@ -13,7 +13,7 @@ Building v8.lib on Windows 10
 7. gclient sync
 8. cd v8; fetch v8
 9. C:\src\depot_tools\v8>..\python276_bin\python.exe gypfiles\gyp_v8 -Dtarget_arch=x64
-10. a few warnings are produced. Find the project file gypfiles\all.sln
+10. a few warnings are produced. Solution file should be produced. (gypfiles\all.sln)
 11. open the solution file (gypfiles\all.sln) on visual studio and build it. 
 
 
