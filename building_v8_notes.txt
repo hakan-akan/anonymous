@@ -1,0 +1,21 @@
+Building v8.lib on Windows 10
+
+1. install vc2017 community edition. Ensure that it works (build a solution).
+2. open vc2017x64 command prompt 
+3. create a directory called src
+4. download depot_tools.zip
+5. EXTRACT depot_tools.zip inside src directory (Yes extract not copy!)
+6. set some environment varaibles 
+    set path=c:\src\depot_tools;%PATH%
+    set GYP_MSVS_VERSION=2015
+    set DEPOT_TOOLS_WIN_TOOLCHAIN=0
+    set GYP_GENERATORS=msvs
+7. gclient sync
+8. cd v8; fetch v8
+9. C:\src\depot_tools\v8>..\python276_bin\python.exe gypfiles\gyp_v8 -Dtarget_arch=x64
+10. a few warnings are produced. Find the project file gypfiles\all.sln
+11. open the solution file (gypfiles\all.sln) on visual studio and build it. 
+
+
+
+    
