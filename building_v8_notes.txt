@@ -5,7 +5,7 @@ Building v8.lib on Windows 10
 3. create a directory called src (Mine is c:\src)
 4. download depot_tools.zip
 5. EXTRACT depot_tools.zip inside src directory (Yes extract not copy!)
-6. set some environment varibles 
+6. set some environment variables 
     set path=c:\src\depot_tools;%PATH%
     set GYP_MSVS_VERSION=2015
     set DEPOT_TOOLS_WIN_TOOLCHAIN=0
